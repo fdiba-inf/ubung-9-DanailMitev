@@ -10,6 +10,11 @@ public class Ellipse {
     a = 1;
     b = 1;
   }
+  public Ellipse(Point startPoint, double a, double b){
+    this.startPoint = new Point(startPoint);
+    this.a = a;
+    this.b = b;
+  }
   public Ellipse(Ellipse otherEllipse){
     startPoint = new Point(otherEllipse.startPoint);
     a = otherEllipse.a;
